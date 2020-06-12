@@ -1,0 +1,368 @@
+/* body{
+    position: relative;
+}
+     */
+
+header img{
+   
+}
+header{
+    position: relative;
+    display: flex!important
+    ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 91px;
+ 
+
+} 
+header a.icon {
+    font-size: 22px;
+  
+    color: #8c6d2d;
+    border: 2px solid #8c6d2d;
+    padding: 5px 20px;
+    background-color: white;
+    line-height: 2;
+    transition-duration: 0.5s;
+    margin-right: 70px;
+}
+header a.icon:hover{
+    background-color: #8c6d2d;
+    color: white ;
+
+}
+  
+
+.cards{
+    width: 50%;
+    height: 345px;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    padding: 50px;
+}
+.cards h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(15, 13, 13) ;
+    font-weight: 700;
+}
+.cards p{
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 20px;
+    color: dimgray;
+}
+.cards button{
+    border: 2px solid #1c5155;
+    padding: 22px 52px;
+    font-family: 'IM Fell Double Pica', serif;
+    color: #1c5155;
+    transition-duration: 0.5s;
+   
+
+}
+.kit{
+    margin-top: 32px;
+}
+.mak{
+    margin-top: 34px;
+}
+.down{
+    margin-top: 66px;
+
+}
+.cards button:hover{
+    background-color: #1c5155;
+    color: white;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1!important;
+}
+.angle i{
+    
+    padding: 11px 15px; 
+    background-size: 35% 35%!important;
+    color: #8c6d2d;
+    background-color: white!important;
+    opacity: 1;
+    transition-duration: 0.5s;
+  
+}
+.angle i:hover{
+    background-color: #8c6d2d!important;
+    color: white;
+}
+
+.navbar{
+    background-color: #63480f;
+    padding: 21px 91px!important;
+}
+.navbar a{
+    font-size: 14px ;
+    color: #f7e3b5;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    transition-duration: 0.5s;
+
+}
+.dropdown1{
+    padding: 8px 16px;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.navbar a:hover {
+    background-color: #997528;
+    text-decoration: none;
+    color: #f7e3b5;
+}
+.dropdown1-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 58;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+}
+.dropdown1-content a{
+    float: none;
+    color: #362e2e;
+    padding: 13px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid #f7e3b5;
+    transition-duration: 0.5s;
+
+}
+.dropdown1-content a:hover{
+    background-color: #997528;
+    text-decoration: none;
+    color: #f7e3b5;
+    border: none;
+
+
+}
+.dropdown1:hover .dropdown1-content{
+    display: block;
+    text-decoration: none;
+    top: 40px;
+    border: none;
+    left: 0px; 
+    transition-duration: 0.5s;
+}
+.dropdown1:hover {
+    background-color: #997528;
+
+}
+.top-header{
+    font-family: 'IM Fell Double Pica', serif;
+    color: #b8995c;
+    background-color: #63480f;
+    height: 50px;
+    border-bottom: 1px solid #362e2e;
+  
+
+}
+.top-header ul li{
+    font-family: sans-serif;
+    list-style: none;
+  
+    padding-right: 8px;
+    font-weight: 700;
+    font-style: oblique;
+    font-family: 'PT Serif', serif;
+}
+.top-header ul{
+    display: flex;
+    margin-bottom: auto;
+    padding: 10px 75px;
+}
+.top{
+    background-color: #63480f;
+   
+
+}
+@media screen and (max-width: 480px) {
+    .navbar a {
+        font-weight: 100;
+        padding: 8px 6px;
+        font-size: 16px;
+    }
+    .navbar {
+            padding:0px;
+
+    }
+}
+
+
+
+.img-cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+.BANQUETS{
+    border: 1px solid #e3d9c3;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    transition-duration: 1s;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.BANQUETS:hover{
+    background-color:#f9f3e7 ;
+    border: 1px solide #e3d9c3;
+}
+
+
+.BANQUETS a{
+    font-family: sans-serif;
+    color: #181714;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition-duration: 1s;
+
+}
+.BANQUETS a:hover{
+    color:#1b5054 ;
+}
+.BANQUETS img{
+    margin-bottom: 40px;
+}
+.rounded-circle img{
+    border-radius: 50%!important;
+}
+
+.banquet-service{
+    text-align: center;
+}
+.banquet-service p{
+    font-style: italic;
+    line-height: 1.8;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53);
+}
+.banquet-service a{
+    text-decoration: none;
+    color: #1b5054;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.KITCHEN-MENU{
+ 
+    border: 1px solid #e3d9c3;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    transition-duration: 1s;
+    margin-right: 25px;
+
+
+}
+.KITCHEN-MENU:hover{
+    background-color:#f9f3e7 ;
+    border: 1px solide #e3d9c3;
+
+}
+.KITCHEN-MENU a{
+    font-family: sans-serif;
+    color: #181714;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition-duration: 1s;
+
+}
+.KITCHEN-MENU a:hover{
+    color:#1b5054 ;
+}
+.KITCHEN-MENU{
+    text-align: center;
+}
+.KITCHEN-MENU p{
+    font-style: italic;
+    line-height: 1.8;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53);
+    margin-top: 40px;
+}
+.kitchen-service a{
+    text-decoration: none;
+    color: #1b5054;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.HOTEL-ROOMS{
+    border: 1px solid #e3d9c3;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    transition-duration: 1s;
+    margin-right: 50px;
+
+}
+.HOTEL-ROOMS:hover{
+    background-color:#f9f3e7 ;
+    border: 1px solide #e3d9c3;
+
+}
+.HOTEL-ROOMS a{
+    font-family: sans-serif;
+    color: #181714;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition-duration: 1s;
+
+}
+.HOTEL-ROOMS a:hover{
+    color:#1b5054 ;
+}
+.HOTEL-ROOMS{
+    text-align: center;
+}
+.HOTEL-ROOMS p{
+    font-style: italic;
+    line-height: 1.8;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53);
+    margin-top: 40px;
+}
+.hotel-service a{
+    text-decoration: none;
+    color: #1b5054;
+    font-weight: 700;
+    font-size: 14px;
+}

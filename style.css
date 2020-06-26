@@ -1,21 +1,33 @@
-/* body{
+ body{
+    margin: 0px;
     position: relative;
-}
-     */
+ 
+ 
+ }   
 
-header img{
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
    
 }
 header{
-    position: relative;
-    display: flex!important
-    ;
+   position: fixed;
+    display: flex!important ;
     align-items: center;
     justify-content: space-between;
     padding: 21px 91px;
+    width: 100%;
+    background-color: white;
  
 
 } 
+.carousel{
+    margin-top: 112px!important;
+}
 header a.icon {
     font-size: 22px;
   
@@ -25,11 +37,12 @@ header a.icon {
     background-color: white;
     line-height: 2;
     transition-duration: 0.5s;
-    margin-right: 70px;
+  
 }
 header a.icon:hover{
     background-color: #8c6d2d;
     color: white ;
+    
 
 }
   
@@ -77,6 +90,7 @@ header a.icon:hover{
 .cards button:hover{
     background-color: #1c5155;
     color: white;
+    cursor: pointer;
 }
 .carousel-control-next, .carousel-control-prev{
     opacity: 1!important;
@@ -194,14 +208,24 @@ header a.icon:hover{
 
 }
 @media screen and (max-width: 480px) {
-    .navbar a {
+    .navbar a{
         font-weight: 100;
         padding: 8px 6px;
         font-size: 16px;
     }
-    .navbar {
+    .navbar{
             padding:0px;
 
+    }
+
+    header a.icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .img-cards {
+        max-width: 720px;
+        
     }
 }
 
@@ -211,6 +235,7 @@ header a.icon:hover{
     display: flex;
     justify-content: space-around;
     padding: 100px 0px;
+    width: 100%;
 }
 .BANQUETS{
     border: 1px solid #e3d9c3;
@@ -222,6 +247,7 @@ header a.icon:hover{
     transition-duration: 1s;
     margin-left: 50px;
     margin-right: 25px;
+    width: 100%;
 }
 .BANQUETS:hover{
     background-color:#f9f3e7 ;
@@ -365,4 +391,511 @@ header a.icon:hover{
     color: #1b5054;
     font-weight: 700;
     font-size: 14px;
+}
+.icons-and-para{
+    padding: 40px 71px;
+    display: flex;
+    margin: 0px 31px;
+}
+.iconss{
+    box-sizing: border-box;
+    padding: 0px 30px;
+    text-align: center;
+}
+.iconss p{
+    line-height: 1.8;
+    font-style: italic;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53);
+}
+
+.our-amenty h1{
+    font-size: 23px;
+    color: #181714;
+    padding: 0px 152px;
+    margin: auto;
+     padding-top: 80px;
+
+}
+.amenities{
+    width: 100%;
+    background-color: #f9f3e7;
+}
+.our-customers h1{
+    font-size: 23px;
+    color: #181714;
+    padding: 14px 152px;
+    margin: auto;
+     padding-top: 80px;
+     text-align: center;
+     font-family: sans-serif;
+     font-weight: bold;
+
+}
+.our-customers p{
+    line-height: 1.8;
+    font-style: italic;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53);
+    text-align: center;
+    width: 39%;
+    margin: auto;
+
+}
+.our-customers strong{
+    color: #1b5054;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.customers-reviews-cards{
+    display: flex;
+    padding: 50px 0px;
+    text-align: center;
+}
+.review-card{
+    border: 1px solid #e3d9c3;
+    width: 100%;
+    height: 410px;
+    margin: 1px 14px;
+   
+}
+.quotes-icon{
+    text-align: justify;
+    margin: 25px 71px;
+}
+.review-card p{
+    line-height: 1.8;
+    font-style: italic;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 20px;
+    color: rgb(54, 53, 53);
+    text-align: center;
+    width: 71%;
+    margin: 40px 50px;
+}
+.review-card span{
+    color: #181714;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.activities-cards{
+    width: 100%;
+    height: auto;
+}
+.activities-cards p{
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53); 
+    font-style: italic;
+    line-height: 1.8;
+}
+.activities-cards h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+.wedding-party{
+    display: flex;
+    margin-right: 90px;
+}
+.birthday-event{
+    display: flex;
+    margin-right: 90px;
+}
+.party{
+    background-image: url(images/card\ 1.jpg);
+    background-size: cover;
+    height: 550px;
+    margin-right: 90px;
+    
+
+}
+
+.wedding{
+    background-image: url(images/card\ 2.jpg);
+    background-size: cover;
+    height: 550px;
+  
+
+}
+
+.event{
+    background-image: url(images/card\ 3.jpg);
+    background-size: cover;
+    height: 550px;
+    margin-right: 90px;
+}
+.birthday-party{
+    background-image: url(images/card\ 4.jpg);
+    height: 550px;
+   
+
+}
+.white-cards{
+    background-color: white;
+    width: 88%;
+    height: 215px;
+    padding: 50px;
+    left: 68px;
+    position: relative;
+    top: 300px;
+    padding: 44px;
+  
+}
+.lunch{
+    display: flex;
+    margin: 0px 52px;
+}
+.offers-detail{
+    display: flex;
+    margin-top: 39px;
+    padding: 52px;
+}
+.lunch strong{
+    color: #6f9496;
+    font-size: 40px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0px;
+}
+
+.lunch h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.lunch p{
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    color: rgb(54, 53, 53); 
+    font-style: italic;
+    line-height: 1.8;
+}
+.circle-img img{
+    border-radius: 50%;
+    height: 200px;
+ 
+    margin-top: 70px;
+}
+.call-button button{
+    padding: 33px;
+    color: #1c5155;
+    border: 2px solid #1c5155;
+    width: 219px;
+    height: 110px;
+    margin: 35px;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.call-button button:hover{
+    background-color: #1c5155;
+    color: white;
+}
+.price-details{
+    margin-left: 70px;
+}
+
+.reservations{
+    display: flex;
+}
+.make-reservation{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 30px;
+    padding-right: 62px;
+
+}
+.our-details-and-location{
+    position: relative;
+    background-color: #00000099;
+}
+.contact-info{
+    display: flex;
+}
+
+.time{
+    background-color: white;
+    border: 1px solid wheat;
+    display: flex;
+    padding: 20px;
+}
+.days-hours p{
+    font-family: initial;
+    color: rgb(54, 53, 53);
+    font-style: italic;
+    margin-bottom: 0px;
+    font-size: 14px;
+
+}
+.timing{
+    FONT-SIZE: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.timing h5{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0px 30px;
+}
+.days-hours{
+    display: flex;
+}
+.days{
+    padding: 10px 30px;
+}
+.hours{
+    padding: 10px;
+}
+.clock-icon{
+ padding: 10px;
+}
+.make{
+    background-color: white;
+    border: 1px solid wheat;
+}
+.make h1{
+    font-size: 23px;
+    font-weight: 700;
+    padding: 34px 46px;
+    margin: auto;
+    LETTER-SPACING: 1PX;
+    font-family: sans-serif;
+}
+.contact{
+    padding: 21px 0px;
+}
+.contact-info{
+    border: 1px solid wheat;
+    height: 151px;
+    width: 35%;
+    margin-top: 95px;
+    background-color: white;
+}
+.contact p{
+    padding: 0px 29px;
+    padding-top: 11px;
+    text-align: justify;
+    width: 84%;
+    margin: 0px 0px;
+    font-family: initial;
+    color: rgb(54, 53, 53);
+    font-style: italic;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.contact h5{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0px 30px;
+    margin-bottom: 0px;
+}
+.reservation-btn{
+    background-color: white;
+    border: 1px solid wheat;
+    height: 122px;
+    width: 28%;
+    text-align: center;
+    padding: 22px;
+    margin-top: 96px;
+
+}
+.reservation-btn button{
+        /* padding: 2px 26px; */
+        width: 251px;
+        height: 76px;
+        border: 1px soi;
+        border: 2px solid #1c5155;
+        color: #1c5155;
+        transition-duration: 1s;
+        cursor: pointer;
+}
+.reservation-btn button:hover{
+    background-color: #1c5155;
+    color: white;
+}
+.layout{
+  
+}
+.map iframe{
+    width: 100%;
+}
+.map-icon{
+    padding: 36px;
+    padding-right: 10px;
+}
+.map{
+  opacity: 0.5;
+}
+.footer{
+    background-color: #1f1707;
+    padding-top: 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.containers{
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.containers h3{
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.containers ul{
+    margin: auto;
+    padding: 0px;
+}
+.fa-angle-right{
+    margin-right: 10px;
+}
+.containers li{
+    list-style: none;
+    color: #857f73;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    margin-bottom: 7px;
+    
+}
+.containers li a:hover{
+    color: #b8b3a9;
+}
+.containers a{
+    text-decoration: none;
+    color: #857f73;
+}
+.social-media i{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.fa-facebook{
+    color: white;
+    background-color: #3B5997;
+    border-radius: 50%;
+    padding: 6px 8px;
+}
+.fa-twitter{
+    color: white;
+    background-color: #00aced;
+    border-radius: 50%;
+    padding: 6px 7px;
+}
+.fa-linkedin{
+    color: white;
+    background-color: #0074A1;
+    border-radius: 50%;
+    padding: 6px 7px;
+}
+.fa-instagram{
+    color: white;
+    background: radial-gradient(circle at 33% 100%, #FED373 2%, #F15245 20%, #D92E7F 42%, #9B36B7 65%, #515ECF);;
+    border-radius: 50%;
+    padding: 6px 7px;
+}
+.fa-google-plus{
+    color: white;
+    background-color: #D64937;
+    border-radius: 50%;
+    padding: 5px 4px;
+}
+.newsletter p{
+    font-family: 'IM Fell Double Pica', serif;
+    color: #857f73;
+    font-size: 17px;
+    font-style: italic;
+}
+.form-group input{
+    background-color: #262013;
+    border: 1px solid #262013;
+    font-family:  'IM Fell Double Pica', serif;
+    padding: 20px;
+    font-style: italic;
+    color: #495057;
+}
+.inp:focus{
+    border-color: #8c6d2d;
+    outline: #8c6d2d;
+}
+.newsletter button{
+    border: 2px solid #8c6d2d;
+    background-color: #1f1707;
+    color: #8c6d2d;
+    font-family: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 16px;
+    transition-duration: 1s;
+}
+.newsletter button:hover{
+    background-color: #8c6d2d;
+    color: white;
+}
+/* .links, .services, .social-media{
+    padding: 10px;
+} */
+.newsletter{
+    padding: 0px;
+    width: 21%;
+}
+hr{
+
+    border-color: #3f3114;
+}
+.last-line{
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+.last-line span{
+    color: #857f73;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+}
+.last-line a{
+    color: #857f73;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#myBtn {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    background-color: #8c6d2d;
+    padding: 9px 16px;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#myBtn i{
+    color: white;
+    font-size: 30px;
+}
+#myBtn:hover{
+    background-color:#1c5155 ;
 }

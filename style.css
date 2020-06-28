@@ -11,9 +11,8 @@
     left: 0;
     z-index: 1;
     width: 100%;
-
-   
 }
+
 header{
    position: fixed;
     display: flex!important ;
@@ -25,6 +24,7 @@ header{
  
 
 } 
+
 .carousel{
     margin-top: 112px!important;
 }
@@ -56,7 +56,17 @@ header a.icon:hover{
     left: 160px;
     padding: 50px;
 }
+
+
+
 .cards h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(15, 13, 13) ;
+    font-weight: 700;
+}
+.cards .long-heading{
     font-size: 30px;
     font-family: sans-serif;
     letter-spacing: 1px;
@@ -68,6 +78,7 @@ header a.icon:hover{
     font-size: 20px;
     color: dimgray;
 }
+
 .cards button{
     border: 2px solid #1c5155;
     padding: 22px 52px;
@@ -185,13 +196,11 @@ header a.icon:hover{
     background-color: #63480f;
     height: 50px;
     border-bottom: 1px solid #362e2e;
-  
-
 }
+
 .top-header ul li{
     font-family: sans-serif;
     list-style: none;
-  
     padding-right: 8px;
     font-weight: 700;
     font-style: oblique;
@@ -204,30 +213,8 @@ header a.icon:hover{
 }
 .top{
     background-color: #63480f;
-   
-
 }
-@media screen and (max-width: 480px) {
-    .navbar a{
-        font-weight: 100;
-        padding: 8px 6px;
-        font-size: 16px;
-    }
-    .navbar{
-            padding:0px;
 
-    }
-
-    header a.icon{
-        display: none;
-    }
-}
-@media screen and (max-width: 480px) {
-    .img-cards {
-        max-width: 720px;
-        
-    }
-}
 
 
 
@@ -239,7 +226,7 @@ header a.icon:hover{
 }
 .BANQUETS{
     border: 1px solid #e3d9c3;
-    height: 500px;
+    height: 530px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -247,7 +234,11 @@ header a.icon:hover{
     transition-duration: 1s;
     margin-left: 50px;
     margin-right: 25px;
-    width: 100%;
+  text-align: center;
+  
+  flex: 1 1 300px;
+  max-width:300px
+
 }
 .BANQUETS:hover{
     background-color:#f9f3e7 ;
@@ -271,6 +262,7 @@ header a.icon:hover{
 }
 .BANQUETS img{
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 .rounded-circle img{
     border-radius: 50%!important;
@@ -297,13 +289,17 @@ header a.icon:hover{
 .KITCHEN-MENU{
  
     border: 1px solid #e3d9c3;
-    height: 500px;
+    height: 530px;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 60px 40px;
     transition-duration: 1s;
     margin-right: 25px;
+    
+    flex: 1 1 300px;
+    max-width:300px
+
 
 
 }
@@ -347,13 +343,17 @@ header a.icon:hover{
 
 .HOTEL-ROOMS{
     border: 1px solid #e3d9c3;
-    height: 500px;
+    height: 530px;
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 60px 40px;
     transition-duration: 1s;
     margin-right: 50px;
+    
+    flex: 1 1 300px;
+    max-width:300px
+
 
 }
 .HOTEL-ROOMS:hover{
@@ -717,7 +717,7 @@ header a.icon:hover{
 }
 .reservation-btn button{
         /* padding: 2px 26px; */
-        width: 251px;
+        width: 200px;
         height: 76px;
         border: 1px soi;
         border: 2px solid #1c5155;
@@ -897,5 +897,132 @@ hr{
     font-size: 30px;
 }
 #myBtn:hover{
-    background-color:#1c5155 ;
+    background-color:#1c5155;
+}
+
+
+
+
+
+@media screen and (max-width: 480px){
+    .head{
+        height: 140px;
+        background-color: white;
+    }
+    .cards{
+        width: 84%;
+        height: 120px;
+        top: 22%;
+        left: 8%;
+        padding: 18px;
+        }
+    .cards h1{
+        font-size: 15px;
+        margin: 0px;
+        text-align: center;
+        }
+        .cards .long-heading{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .cards p{
+            display: none;
+        }
+        header{
+            padding: 20px;
+        }
+        .angle{
+            display: none;
+        }
+        .cards button{
+          
+            height: 53%;
+            text-align: center;
+            padding: 0px 25px;
+            font-size: 18px;
+            font-weight: 700;
+            width: 88%;
+            margin: 8px 18px;
+        }
+        .cards .mak{
+            margin-top: 3% ;
+            font-size: 17px;
+            margin-left: 6%;
+            height: 45%;
+            font-weight: 700;
+        }
+        .navbar a{
+            font-weight: 100;
+            padding: 8px 6px;
+            font-size: 16px;
+        }
+        .navbar{
+                padding:0px;
+    
+        }
+        .img-cards {
+            max-width: 720px;
+            flex-wrap: wrap;
+        } 
+        .img-cards .BANQUETS, .KITCHEN-MENU, .HOTEL-ROOMS{
+            margin: 5px 20px;
+            text-align: center;
+        }
+        
+
+}
+@media screen and (max-width:768px){
+    .top{
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) and (min-width:481px){
+    .angle{
+        display: none;
+    }
+    .cards p{
+        display: none;
+    }
+    .cards h1{
+    font-size: 23px;
+    margin: 0px;
+    text-align: center;
+    }
+    .cards .long-heading{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .cards{
+    width: 84%;
+    height: 120px;
+    top: 45%;
+    left: 8%;
+    padding: 18px;
+    
+    }
+    .cards button{
+        margin: 1% 26%;
+        height: 62%;
+        text-align: center;
+        padding: 1px 22px;
+        font-size: 20px;
+        font-weight: 700;
+        width: 45%;
+    }
+    .cards .mak{
+        height: 60%;
+        font-size: 20px;
+        width: 45%;
+        margin-right: 70%;
+    }
+    .img-cards {
+        max-width: 720px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    } 
+    .img-cards .BANQUETS, .KITCHEN-MENU, .HOTEL-ROOMS{
+        margin: 5px 10px;
+        /* text-align: center; */
+    }
+    
 }

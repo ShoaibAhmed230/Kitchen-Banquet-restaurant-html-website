@@ -1041,6 +1041,25 @@ hr{
     .top{
         display: none;
     }
+    .call-button button{
+        width: 90%;
+        height: 64px;
+        margin: 35px;
+        padding: 0px;
+
+    }
+}
+@media screen and (max-width:1440px) and (min-width:769px){
+    .lunch-offer{
+        display: flex;
+        margin-right: 0px;
+    }
+    .lunchh1{
+        font-size: 24px;
+    }
+    .call-button button{
+        margin: 161px 20px;
+    }
 }
 @media screen and (max-width: 990px) and (min-width:481px){
     .angle{

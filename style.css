@@ -397,7 +397,7 @@ header a.icon:hover{
     display: flex;
     /* margin: 0px 31px;
     max-width: 320px; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content:center;
     width: 100%;
     
@@ -516,6 +516,8 @@ header a.icon:hover{
 .activities-cards{
     width: 100%;
     height: auto;
+    /* flex: 1 1 320px;
+    max-width: 500px; */
 }
 .activities-cards p{
     font-family: 'IM Fell Double Pica', serif;
@@ -530,17 +532,17 @@ header a.icon:hover{
 }
 .wedding-party{
     display: flex;
-    margin-right: 90px;
+    /* margin-right: 90px; */
 }
 .birthday-event{
     display: flex;
-    margin-right: 90px;
+    /* margin-right: 90px; */
 }
 .party{
     background-image: url(images/card\ 1.jpg);
     background-size: cover;
     height: 550px;
-    margin-right: 90px;
+    /* margin-right: 90px; */
     
 
 }
@@ -557,7 +559,7 @@ header a.icon:hover{
     background-image: url(images/card\ 3.jpg);
     background-size: cover;
     height: 550px;
-    margin-right: 90px;
+    /* margin-right: 90px; */
 }
 .birthday-party{
     background-image: url(images/card\ 4.jpg);
@@ -994,12 +996,12 @@ hr{
             margin: 5px 20px;
             text-align: center;
         }
-        /* .icons-and-para{
+        .icons-and-para{
             max-width: 320px;
             flex-wrap: wrap;
             justify-content: flex-start;
         }
-         */
+        
          .review-card{
              flex: 1 1 414px;
              max-width: 414px;
@@ -1015,6 +1017,24 @@ hr{
             max-width: 414px;
             width: 100%;
         }
+        .wedding-party{
+            flex-wrap: wrap;
+            flex: 1 1 320px;
+            max-width: 320px;
+            margin-right: 0px;
+        }
+        .birthday-event {
+            flex-wrap: wrap;
+            flex: 1 1 320px;
+            max-width: 320px;
+            margin-right: 0px;
+        }
+        .white-cards{
+            width: 70%;
+            height: 360px;
+            top: 111px
+        }
+
 
 }
 @media screen and (max-width:768px){
@@ -1100,5 +1120,70 @@ hr{
        width: 100%;
        margin: 0px 20px;
    }
-    
+   .white-cards{
+    width: 90%;
+    height: 221px;
+    top: 135px;
+    left: 17px;
+   }
+   .white-cards p{
+       font-size: 15px;
+   }
+   .activities-cards{
+   
+    width: 100%;
+}
+
+   
+   .wedding-party{
+    /* flex-wrap: wrap; */
+    flex: 1 1 320px;
+    max-width: 701px;
+    margin-right: 0px;
+    display: flex;
+}
+.party, .wedding, .event, .birthday-party{
+    height: 430px;
+
+}
+.birthday-event {
+    /* flex-wrap: wrap; */
+    flex: 1 1 320px;
+    max-width: 701px;
+    margin-right: 0px;
+    display: flex;
+}
+}
+@media screen and (max-width:990px) and (min-width:1024px){
+    .activities-cards{
+        display: flex;
+        width: 100%;
+    }
+    .white-cards{
+        width: 74%;
+        height: 245px;
+        top: 100px;
+        left: 40px;
+       }
+       .white-cards p{
+           font-size: 11px;
+       }
+       .wedding-party{
+        /* flex-wrap: wrap; */
+        flex: 1 1 320px;
+        max-width: 701px;
+        margin-right: 0px;
+        display: flex;
+    }
+    .party, .wedding, .event, .birthday-party{
+        height: 430px;
+
+    }
+    .birthday-event {
+        /* flex-wrap: wrap; */
+        flex: 1 1 320px;
+        max-width: 701px;
+        margin-right: 0px;
+        display: flex;
+    }
 }

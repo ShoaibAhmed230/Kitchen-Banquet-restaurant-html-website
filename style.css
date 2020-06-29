@@ -395,12 +395,19 @@ header a.icon:hover{
 .icons-and-para{
     padding: 40px 71px;
     display: flex;
-    margin: 0px 31px;
+    /* margin: 0px 31px;
+    max-width: 320px; */
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    
 }
 .iconss{
     box-sizing: border-box;
-    padding: 0px 30px;
+    padding: 0px 11px;
     text-align: center;
+    flex: 1 1 185px;
+    max-width: 185px;
 }
 .iconss p{
     line-height: 1.8;
@@ -413,24 +420,39 @@ header a.icon:hover{
 .our-amenty h1{
     font-size: 23px;
     color: #181714;
-    padding: 0px 152px;
+    /* padding: 0px 152px; */
     margin: auto;
      padding-top: 80px;
+     text-align: start;
+     padding-left: 25px;
 
 }
 .amenities{
     width: 100%;
     background-color: #f9f3e7;
 }
+.customers{
+    width: 100%;
+}
+.our-customers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 433%;
+    max-width: 433%;
+}
 .our-customers h1{
     font-size: 23px;
     color: #181714;
-    padding: 14px 152px;
+    /* padding: 14px 152px; */
     margin: auto;
-     padding-top: 80px;
-     text-align: center;
-     font-family: sans-serif;
-     font-weight: bold;
+    padding-top: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    flex: 1 1 160%;
+    max-width: 280%;
 
 }
 .our-customers p{
@@ -440,8 +462,12 @@ header a.icon:hover{
     font-size: 17px;
     color: rgb(54, 53, 53);
     text-align: center;
-    width: 39%;
-    margin: auto;
+    width: 100%;
+    /* margin: 10%; */
+    flex: 1 1 160%;
+    max-width: 222%;
+    padding: 1%;
+
 
 }
 .our-customers strong{
@@ -968,7 +994,27 @@ hr{
             margin: 5px 20px;
             text-align: center;
         }
-        
+        /* .icons-and-para{
+            max-width: 320px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+         */
+         .review-card{
+             flex: 1 1 414px;
+             max-width: 414px;
+             flex-wrap: wrap;
+             margin: 10px;
+         }
+         .customers-reviews-cards {
+            display: flex;
+            padding: 50px 0px;
+            text-align: center;
+            flex-wrap: wrap;
+            flex: 1 1 414px;
+            max-width: 414px;
+            width: 100%;
+        }
 
 }
 @media screen and (max-width:768px){
@@ -1024,5 +1070,35 @@ hr{
         margin: 5px 10px;
         /* text-align: center; */
     }
+    /* .icons-and-para{
+        max-width: 320px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    } */
+    .review-card{
+        flex: 1 1 727px;
+        max-width: 727px;
+        flex-wrap: wrap;
+        height: 300px;
+        margin: 14px 0px;
+    }
+    .review-card p{
+        margin: auto;
+        
+    }
+    .review-card span{
+        margin-top: 10px;
+    }
+    
+    .customers-reviews-cards {
+       display: flex;
+       padding: 50px 0px;
+       text-align: center;
+       flex-wrap: wrap;
+       flex: 1 1 728px;
+       max-width: 728px;
+       width: 100%;
+       margin: 0px 20px;
+   }
     
 }

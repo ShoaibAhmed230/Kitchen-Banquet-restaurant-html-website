@@ -1037,16 +1037,36 @@ hr{
 
 
 }
-@media screen and (max-width:768px){
-    .top{
-        display: none;
-    }
+@media screen and (max-width:767px){
     .call-button button{
         width: 90%;
         height: 64px;
         margin: 35px;
         padding: 0px;
 
+    }
+} 
+@media screen and (max-width:768px){
+    .top{
+        display: none;
+    }
+    .call-button button{
+        width: 80%;
+        height: 64px;
+        margin: 35px;
+        padding: 0px;
+
+    }
+    .lunch{
+        display: block;
+        margin: 0px;
+    }
+    .offers-detail {
+        padding: 0px;
+    }
+    .circle-img img{
+        height: 313px;
+        margin-left: 22px;
     }
 }
 @media screen and (max-width:1440px) and (min-width:769px){

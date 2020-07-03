@@ -28,7 +28,7 @@ header{
 } 
 
 .carousel{
-    margin-top: 112px!important;
+    /* margin-top: 112px!important; */
 }
 header a.icon {
     font-size: 22px;
@@ -125,7 +125,7 @@ header a.icon:hover{
 
 .navbar{
     background-color: #63480f!important;
-    padding: 21px 91px!important;
+    padding: 12px 91px!important;
 }
 .navbar a{
     font-size: 14px ;
@@ -140,6 +140,9 @@ header a.icon:hover{
 }
 .navbar-nav{
     align-items: center;
+}
+.navbar-nav .nav-item{
+    padding: 0px 12px!important;
 }
 .dropdown1{
     padding: 8px 16px;
@@ -1286,7 +1289,13 @@ hr{
         width: 100%;
     }
     .top{
+        display: block;
+    }
+    .top-header{
         display: none;
+    }
+    .navbar-toggler{
+        margin-left: 100%!important;
     }
     
     

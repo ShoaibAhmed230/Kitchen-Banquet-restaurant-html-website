@@ -142,7 +142,10 @@ header a.icon:hover{
     align-items: center;
 }
 .navbar-nav .nav-item{
-    padding: 0px 12px!important;
+    padding: 0px 8px!important;
+}
+.navbar h3{
+    display: none; 
 }
 .dropdown1{
     padding: 8px 16px;
@@ -1157,6 +1160,13 @@ hr{
         #myBtn{
             padding: 1px 8px;
         }
+        .navbar h3{
+            display: block; 
+        }
+        .navbar{
+            padding: 0px!important;
+        }
+
 
 
 }
@@ -1232,6 +1242,13 @@ hr{
     .our-details-and-location{
         background-color: white;
     }
+    .navbar h3{
+        display: block; 
+    }
+    .navbar{
+        padding: 0px!important;
+    }
+
 }
 @media screen and (max-width:767px){
     .call-button button{
@@ -1295,7 +1312,19 @@ hr{
         display: none;
     }
     .navbar-toggler{
-        margin-left: 100%!important;
+        margin: 21px;
+    }
+    .navbar h3 {
+        margin: 20px;
+        color: #f7e3b5;
+        font-family: auto;
+        font-size: 23px;
+    
+    }
+    .navbar {
+        padding: 0px!important;
+        border: 18px solid #63480f;
+        background: #8c6d2d!important;
     }
     
     

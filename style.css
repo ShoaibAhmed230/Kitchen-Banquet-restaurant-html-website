@@ -11,6 +11,7 @@
     left: 0;
     z-index: 1;
     width: 100%;
+    /* display: none; */
 }
 
 header{
@@ -23,9 +24,12 @@ header{
     width: 100%;
     background-color: white;
     z-index: 1;
- 
-
 } 
+@media screen and (min-width:769px){
+    header{
+        z-index: 0;
+    }
+}
 
 .carousel{
     /* margin-top: 112px!important; */
@@ -1260,11 +1264,14 @@ hr{
     }
 } 
 @media screen and (max-width:768px){
-   
+    header{
+        z-index: 1;
+    }
+
     .call-button button{
         width: 80%;
         height: 64px;
-        margin: 35px;
+        margin: 86px;
         padding: 0px;
 
     }
